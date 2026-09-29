@@ -6,12 +6,30 @@ $(function() {
       type: 'bullets',
     },
     slidesPerView: 5,
-    spaceBetween: 50,
+    spaceBetween: 100,
     // breakpoints: {
     //   768: {
     //     slidesPerView: 2,
     //   },
     // },
+  });
+
+  const thumbsSwiper = new Swiper('.swiper-thumbs', {
+    spaceBetween: 7,
+    slidesPerView: 8,
+    freeMode: true,
+    watchSlidesProgress: true,
+    slidesPerView: 'auto',
+  });
+
+  const benefitsMainSlider = new Swiper('.benefits-main-slider', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+      swiper: thumbsSwiper,
+    },
   });
 });
 
