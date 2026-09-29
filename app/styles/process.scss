@@ -1,0 +1,54 @@
+.process {
+  padding: 75px 0 35px;
+
+  .button-block {
+    margin-top: 56px;
+  }
+}
+
+.process-title {
+  font-size: 32px;
+  letter-spacing: 4%;
+  color: var(--blue);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.process-slider {
+  width: 1120px;
+  margin: 0 auto;
+}
+
+.process-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: var(--blue);
+  height: 320px;
+  padding: 35px;
+  background-color: #F0EEEF;
+  border-radius: 8px;
+  border: 1px solid #EDEDED;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #F9F0E6;
+  }
+
+  .proces-icon {
+    margin-bottom: 25px;
+  }
+
+  h3 {
+    font-size: 22px;
+    letter-spacing: 4%;
+    margin-bottom: 21px;
+  }
+
+  p {
+    color: var(--primary);
+    line-height: 23px;
+    letter-spacing: 3%;
+  }
+}

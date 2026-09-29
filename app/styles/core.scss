@@ -27,3 +27,18 @@
     }
   }
 }
+
+.button-block {
+  text-align: center;
+}
+
+.button-block-meta{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 13px;
+
+  .hero-review-stars {
+    margin-left: 0;
+  }
+}

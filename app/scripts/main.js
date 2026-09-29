@@ -31,5 +31,10 @@ $(function() {
       swiper: thumbsSwiper,
     },
   });
+
+  const processSlider = new Swiper('.process-slider', {
+    slidesPerView: 3,
+    spaceBetween: 41,
+  });
 });
 
