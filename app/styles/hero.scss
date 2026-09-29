@@ -1,0 +1,112 @@
+.hero {
+  padding-bottom: 142px;
+
+  .logo {
+    color: #000;
+    margin: 33px 0 61px;
+
+    svg {
+      width: 200px;
+      height: 36px;
+    }
+  }
+}
+
+.hero-top {
+  padding: 0 15px;
+  background-color: var(--light);
+  text-align: center;
+  color: var(--gray-exd);
+  font-family: 'Suisse Intl Trial', sans-serif;
+  font-size: 11px;
+  line-height: 35px;
+  letter-spacing: 8%;
+}
+
+.hero-content {
+  position: relative;
+  width: 550px;
+
+  h1 {
+    font-size: 38px;
+    line-height: 45px;
+    letter-spacing: 4%;
+    color: var(--blue);
+    margin-bottom: 25px;
+  }
+
+  ul {
+    li {
+      display: flex;
+      align-items: flex-start;
+
+      &:not(:last-child) {
+        margin-bottom: 23px;
+      }
+
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 31px;
+        height: 31px;
+        width:  31px;
+        margin: -6px 13px 0 0;
+        border-radius: 50%;
+        background-color: var(--light);
+        color: var(--blue);
+      }
+
+      p {
+        line-height: 23px;
+        letter-spacing: 3%;
+      }
+    }
+  }
+
+  .button {
+    margin-top: 39px;
+  }
+}
+
+.hero-photos {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 63px;
+  left: calc(100% + 20px);
+  width: 725px;
+  padding: 0 66px;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 134px;
+    height: 189px;
+    background: linear-gradient(to top, var(--light), rgba(#F9F0E5, 0.31));
+    z-index: 1;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+
+  img {
+    position: relative;
+    width: 209px;
+    height: 316px;
+    z-index: 2;
+
+    &:nth-child(2) {
+      border: 2px solid var(--white);
+      transform: scale(1.3);
+      z-index: 3;
+    }
+  }
+}
