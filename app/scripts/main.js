@@ -24,8 +24,8 @@ $(function() {
 
   const benefitsMainSlider = new Swiper('.benefits-main-slider', {
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.benefits-next',
+      prevEl: '.benefits-prev',
     },
     thumbs: {
       swiper: thumbsSwiper,
@@ -35,6 +35,16 @@ $(function() {
   const processSlider = new Swiper('.process-slider', {
     slidesPerView: 3,
     spaceBetween: 41,
+  });
+
+  const reviewsSlider = new Swiper('.reviews-slider', {
+    slidesPerView: 3,
+    spaceBetween: 21,
+    loop: true,
+    navigation: {
+      nextEl: '.review-next',
+      prevEl: '.review-prev',
+    },
   });
 });
 

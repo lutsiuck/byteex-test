@@ -53,6 +53,15 @@
     }
   }
 
+  .swiper-button-next {
+    left: calc(100% + 20px);
+  }
+  
+  .swiper-button-prev {
+    right: calc(100% + 20px);
+    left: auto;
+  }
+
   .benefits-thumbs-slider {
     position: absolute;
     left: 50%;
