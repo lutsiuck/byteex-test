@@ -1,0 +1,104 @@
+.footer {
+  padding: 83px 0;
+  background: linear-gradient(to top, #F9F0E5, rgba(#F9F0E5, 0.18), transparent) 100% 530px no-repeat;
+  background-position: bottom;
+}
+
+.footer-title {
+  text-align: center;
+  color: var(--blue);
+  font-size: 32px;
+  letter-spacing: 4%;
+  margin-bottom: 15px;
+}
+
+.footer-desc {
+  line-height: 22px;
+  letter-spacing: 3%;
+  max-width: 590px;
+  text-align: center;
+  margin: 0 auto 90px;
+}
+
+.footer-illustration {
+  display: flex;
+  justify-content: space-between;
+  width: 676px;
+  margin: 0 auto 86px;
+
+  img {
+    display: block;
+    object-fit: cover;
+    width: 209px;
+    height: 316px;
+
+    &:nth-child(2) {
+      transform: scale(1.18);
+    }
+  }
+}
+
+.footer-button {
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.ships-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green);
+  margin-bottom: 16px;
+
+  p {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    border-right: 2px solid rgba(#C4C4C4, 0.25);
+    letter-spacing: 4%;
+    padding: 3px 10px 3px 0;
+    margin-right: 10px;
+
+    svg {
+      margin: -2px 4px 0 0;
+    }
+  }
+
+  img {
+    width: 243px;
+  }
+}
+
+.ships-row {
+  display: flex;
+  justify-content: center;
+}
+
+.ship-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 23px;
+  border-right: 1px solid rgba(#C4C4C4, 0.4);
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.ship-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: rgba(#666, 0.1);
+  margin-right: 12px;
+}
+
+.ship-text {
+  font-size: 14px;
+  letter-spacing: 3%;
+  line-height: 20px;
+  white-space: nowrap;
+}
