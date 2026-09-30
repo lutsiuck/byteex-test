@@ -46,5 +46,9 @@ $(function() {
       prevEl: '.review-prev',
     },
   });
+
+  $('.faq-question').on('click', function() {
+    $(this).closest('.faq-item').toggleClass('active');
+  });
 });
 

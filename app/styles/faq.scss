@@ -1,0 +1,158 @@
+.faq {
+  padding: 60px 0 88px;
+}
+
+.faq-wrapper {
+  display: grid;
+  grid-template-columns: 55% 227px;
+  grid-template-rows: auto 1fr;
+  grid-gap: 0 168px;
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.section-title {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 32px;
+  letter-spacing: 4%;
+  color: var(--blue);
+  margin-bottom: 50px;
+}
+
+.faq-content {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.faq-item {
+  padding: 23px 0;
+  border-bottom: 1px solid #EAEAEA;
+
+  &:first-child {
+    border-top: 1px solid #EAEAEA;
+  }
+
+  &.active {
+    .faq-answer {
+      grid-template-rows: 1fr;
+    }
+
+    .faq-question {
+      .plus::before {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 4%;
+  color: var(--blue);
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  .plus {
+    position: relative;
+    flex: 0 0 18px;
+    height: 18px;
+    margin-left: 20px;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      background-color: var(--blue);
+      width: 2px;
+      height: 100%;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &::before {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &::after {
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%) rotate(90deg);
+    }
+  }
+}
+
+.faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  padding-right: 64px;
+  transition: grid-template-rows 0.3s ease-in-out;
+}
+
+.faq-answer-content {
+  line-height: 22px;
+  letter-spacing: 3%;
+  overflow: hidden;
+}
+
+.faq-illustration {
+  position: relative;
+  grid-column: 2;
+  grid-row: 1 / 3;
+  margin-top: 129px;
+  height: 355px;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(to top, var(--light), rgba(#F9F0E5, 0.31));
+    height: 188px;
+  }
+
+  &::before {
+    width: 149px;
+    top: -62px;
+    left: -50px;
+    z-index: 1;
+  }
+
+  &::after {
+    width: 134px;
+    bottom: -35px;
+    right: -65px;
+  }
+
+  img {
+    display: block;
+    object-fit: cover;
+
+    &:nth-child(1) {
+      position: absolute;
+      top: -128px;
+      right: -81px;
+      width: 167px;
+      height: 253px;
+      z-index: 1;
+    }
+
+    &:nth-child(2) {
+      position: relative;
+      width: 100%;
+      height: 355px;
+      z-index: 3;
+    }
+
+    &:nth-child(3) {
+      position: absolute;
+      bottom: -115px;
+      left: -81px;
+      width: 216px;
+      height: 159px;
+      z-index: 1;
+    }
+  }
+}
