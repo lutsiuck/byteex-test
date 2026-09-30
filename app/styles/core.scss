@@ -2,11 +2,16 @@
   padding: 0 30px;
   margin: 0 auto;
   max-width: 1320px;
+
+  @media (max-width: 991px) {
+    padding: 0 25px;
+  }
 }
 
 .button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   height: 56px;
   border-radius: 5px;
   font-size: 18px;
@@ -30,6 +35,12 @@
 
 .button-block {
   text-align: center;
+
+  .button {
+    @media (max-width: 430px) {
+      width: 100%;
+    }
+  }
 }
 
 .button-block-meta{
@@ -48,4 +59,11 @@
   height: 20px;
   width: 11px;
   color: var(--primary);
+}
+.swiper-pagination-bullet {
+  background-color: #C4C4C4;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000;
 }

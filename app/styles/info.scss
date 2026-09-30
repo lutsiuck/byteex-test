@@ -1,19 +1,33 @@
 .info {
   background-color: #F0EEEF;
   padding: 39px 0 32px;
+
+  @media (max-width: 991px) {
+    padding: 55px 0;
+  }
 }
 
 .section-title {
-  color:var(--blue);
+  color: var(--blue);
   margin-bottom: 20px;
   font-size: 25px;
   letter-spacing: 4%;
   text-align: center;
+
+  @media (max-width: 991px) {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
 }
 
 .info-row {
   display: flex;
   justify-content: center;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    padding: 0 35px;
+  }
 }
 
 .info-item {
@@ -21,8 +35,18 @@
   border-right: 1px solid rgba(196, 196, 196, 0.5);
   text-align: center;
 
+  @media (max-width: 767px) {
+    border-right: none;
+    border-bottom: 1px solid rgba(196, 196, 196, 0.5);
+    padding: 16px 10px;
+  }
+
   &:last-child {
     border-right: none;
+
+    @media (max-width: 767px) {
+      border-bottom: none;
+    }
   }
 }
 

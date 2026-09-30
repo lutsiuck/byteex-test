@@ -1,6 +1,10 @@
 .process {
   padding: 75px 0 35px;
 
+  @media (max-width: 991px) {
+    padding: 60px 0 25px;
+  }
+
   .button-block {
     margin-top: 56px;
   }
@@ -12,11 +16,24 @@
   color: var(--blue);
   margin-bottom: 50px;
   text-align: center;
+
+  @media (max-width: 991px) {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
 }
 
 .process-slider {
   width: 1120px;
   margin: 0 auto;
+
+  @media (max-width: 1199px) {
+    width: 100%;
+  }
+
+  @media (max-width: 991px) {
+    margin-bottom: 41px;
+  }
 }
 
 .process-item {

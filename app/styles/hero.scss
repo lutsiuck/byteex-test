@@ -3,6 +3,11 @@
     color: #000;
     margin: 33px 0 61px;
 
+    @media (max-width: 991px) {
+      margin: 13px 0 15px;
+      text-align: center;
+    }
+
     svg {
       width: 200px;
       height: 36px;
@@ -19,19 +24,44 @@
   font-size: 11px;
   line-height: 35px;
   letter-spacing: 8%;
+
+  span {
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
 }
 
 .hero-content {
   position: relative;
-  width: 550px;
+  width: calc(550px * 100% / 1320px);
   padding-bottom: 142px;
+
+  @media (max-width: 1360px) {
+    width: 50%;
+  }
+
+  @media (max-width: 991px) {
+    width: 100%;
+    padding: 0 22px 86px;
+  }
+
+  @media (max-width: 430px) {
+    padding: 0 0 86px;
+  }
 
   h1 {
     font-size: 38px;
     line-height: 45px;
     letter-spacing: 4%;
     color: var(--blue);
-    margin-bottom: 25px;
+    margin-bottom: 45px;
+
+    @media (max-width: 991px) {
+      font-size: 26px;
+      line-height: 34px;
+      text-align: center;
+    }
   }
 
   ul {
@@ -65,6 +95,10 @@
 
   .button {
     margin-top: 39px;
+
+    @media (max-width: 430px) {
+      width: 100%;
+    }
   }
 }
 
@@ -77,6 +111,27 @@
   width: 725px;
   padding: 0 66px;
 
+  @media (max-width: 1360px) {
+    width: 100%;
+  }
+
+  @media (max-width: 991px) {
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 0;
+    width: 600px;
+    margin: 0 auto 53px;
+  }
+
+  @media (max-width: 767px) {
+    width: 380px;
+  }
+
+  @media (max-width: 430px) {
+    width: 280px;
+  }
+
   &::before, &::after {
     content: '';
     position: absolute;
@@ -86,6 +141,21 @@
     height: 189px;
     background: linear-gradient(to top, var(--light), rgba(#F9F0E5, 0.31));
     z-index: 1;
+
+    @media (max-width: 1360px) {
+      width: 100px;
+      height: 150px;
+    }
+
+    @media (max-width: 1199px) {
+      width: 80px;
+      height: 120px;
+    }
+
+    @media (max-width: 767px) {
+      width: 70px;
+      height: 99px;
+    }
   }
 
   &::before {
@@ -101,6 +171,26 @@
     width: 209px;
     height: 316px;
     z-index: 2;
+
+    @media (max-width: 1360px) {
+      width: 180px;
+      height: 280px;
+    }
+
+    @media (max-width: 1199px) {
+      width: 140px;
+      height: 210px;
+    }
+
+    @media (max-width: 991px) {
+      width: 160px;
+      height: 240px;
+    }
+
+    @media (max-width: 767px) {
+      width: 109px;
+      height: 166px;
+    }
 
     &:nth-child(2) {
       border: 2px solid var(--white);
@@ -120,6 +210,11 @@
   border-radius: 8px;
   width: 416px;
   padding: 16px 19px;
+
+  @media (max-width: 991px) {
+    width: 100%;
+    transform: translateY(57%);
+  }
 }
 
 .hero-review-top {

@@ -7,11 +7,19 @@ $(function() {
     },
     slidesPerView: 5,
     spaceBetween: 100,
-    // breakpoints: {
-    //   768: {
-    //     slidesPerView: 2,
-    //   },
-    // },
+    breakpoints: {
+      991: {
+        slidesPerView: 5,
+      },
+      420: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+    },
   });
 
   const thumbsSwiper = new Swiper('.swiper-thumbs', {
@@ -35,6 +43,19 @@ $(function() {
   const processSlider = new Swiper('.process-slider', {
     slidesPerView: 3,
     spaceBetween: 41,
+    breakpoints: {
+      767: {
+        slidesPerView: 3,
+      },
+      360: {
+        slidesPerView: 1,
+      },
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      type: 'bullets',
+    },
   });
 
   const reviewsSlider = new Swiper('.reviews-slider', {
@@ -44,6 +65,17 @@ $(function() {
     navigation: {
       nextEl: '.review-next',
       prevEl: '.review-prev',
+    },    
+    breakpoints: {
+      991: {
+        slidesPerView: 3,
+      },
+      767: {
+        slidesPerView: 2,
+      },
+      360: {
+        slidesPerView: 1,
+      },
     },
   });
 
