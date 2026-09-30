@@ -82,8 +82,14 @@
 }
 
 .reviews-slider {
+  margin-bottom: 63px;
+  
   .swiper-slide {
-    padding: 10px;
+    padding: 10px 10px 20px;
+  }
+
+  .swiper-pagination {
+    bottom: 0;
   }
 }
 

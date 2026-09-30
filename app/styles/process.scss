@@ -7,6 +7,10 @@
 
   .button-block {
     margin-top: 56px;
+
+    @media (max-width: 991px) {
+      margin-top: 0;
+    }
   }
 }
 

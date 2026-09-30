@@ -166,8 +166,9 @@
     right: 0;
   }
 
-  img {
+  picture {
     position: relative;
+    display: block;
     width: 209px;
     height: 316px;
     z-index: 2;
@@ -196,6 +197,13 @@
       border: 2px solid var(--white);
       transform: scale(1.3);
       z-index: 3;
+    }
+
+    img {
+      display: block;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
     }
   }
 }

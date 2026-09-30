@@ -47,7 +47,7 @@ $(function() {
       767: {
         slidesPerView: 3,
       },
-      360: {
+      320: {
         slidesPerView: 1,
       },
     },
@@ -65,7 +65,12 @@ $(function() {
     navigation: {
       nextEl: '.review-next',
       prevEl: '.review-prev',
-    },    
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      type: 'bullets',
+    },
     breakpoints: {
       991: {
         slidesPerView: 3,
@@ -73,7 +78,7 @@ $(function() {
       767: {
         slidesPerView: 2,
       },
-      360: {
+      320: {
         slidesPerView: 1,
       },
     },
